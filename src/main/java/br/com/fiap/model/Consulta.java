@@ -32,10 +32,10 @@ public class Consulta extends AbstractEntity<Long> {
 	@Column(nullable = false)
 	private Status status_consulta;
 	
-	@Column()
+	@Column(columnDefinition = "NUMBER(5,2)")
 	private double quantidade_horas;
 	
-	@Column()
+	@Column(columnDefinition = "NUMBER(7,2)")
 	private double valor_consulta;
 	
 }

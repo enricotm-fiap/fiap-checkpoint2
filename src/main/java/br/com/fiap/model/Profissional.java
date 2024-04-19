@@ -16,7 +16,7 @@ public class Profissional extends AbstractEntity<Long> {
 	@Column(nullable = false)
 	private String especialidade;
 	
-	@Column
+	@Column(columnDefinition = "NUMBER(7,2)")
 	private double valor_hora;
 	
 	@Column(nullable = false, updatable = false, columnDefinition = "DATE")
